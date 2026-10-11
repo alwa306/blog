@@ -1,8 +1,38 @@
-body/* ===== 1. VARIABEL & RESET ===== */
+/* ===== Montserrat ===== */
+@font-face {
+  font-family: "Montserrat";
+  src: url("Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+/* ===== Nunito ===== */
+@font-face {
+  font-family: "Nunito";
+  src: url("Nunito/Nunito-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("Nunito/Nunito-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+/* ===== 1. VARIABEL & RESET ===== */
 :root {
   --blue: #0b3d91;      /* biru tua khas CV */
   --blue-soft: #1a4a94; /* biru untuk judul pekerjaan */
   --text: #1a1a1a;
+  --font-heading: "Montserrat", sans-serif; /* judul & nama */
+  --font-body: "Nunito", sans-serif;    /* isi teks (ganti di sini jika perlu) */
 }
 
 * {
@@ -13,7 +43,7 @@ body/* ===== 1. VARIABEL & RESET ===== */
 
 body {
   background: #e9ecf1;
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-body);
   color: var(--text);
   line-height: 1.5;
   padding: 24px 0;
@@ -38,7 +68,7 @@ body {
 .contact {
   display: flex;
   justify-content: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-body);
   font-size: 11.5px;
   letter-spacing: 3px;
 }
@@ -62,8 +92,8 @@ body {
   margin-top: 14px;
 }
 
-.name .first { color: var(--blue); }
-.name .last  { color: #000; margin-left: 6px; }
+.name .first { color: var(--text); }
+.name .last  { color: var(--text); }
 
 .job-title {
   font-family: "Montserrat", sans-serif;
@@ -102,7 +132,7 @@ body {
 }
 
 .summary {
-  font-size: 14.5px;
+  font-size: 13px;
   text-align: justify;
 }
 
@@ -120,7 +150,7 @@ body {
 /* ===== 7. LIST ===== */
 ul {
   padding-left: 20px;
-  font-size: 14.5px;
+  font-size: 13px;
 }
 
 ul li {
@@ -145,19 +175,19 @@ ul.tight li {
 
 .job-position,
 .sub-title {
-  font-family: "Nunito", sans-serif;
-  font-weight: 700;
-  font-size: 17px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 16px;
   color: var(--blue-soft);
 }
 
 .date {
-  font-size: 14.5px;
+  font-size: 13px;
 }
 
 .company {
-  font-weight: 700;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 13.5px;
   margin-bottom: 4px;
 }
 
@@ -167,7 +197,7 @@ ul.tight li {
 }
 
 .desc {
-  font-size: 14.5px;
+  font-size: 13px;
   text-align: justify;
 }
 
