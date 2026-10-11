@@ -1,40 +1,139 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Pribadi Saya</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Sandika Alwa</title>
+
+  <!-- Font: Montserrat (judul) dan Nunito (isi) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Blog Harian Coding</h1>
-        <p>Catatan belajar membuat website dari nol</p>
+  <main class="page">
+
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+      <div class="contact">
+        <span>Pancoran Mas, Depok,</span>
+        <span>0857-3320-2006</span>
+        <span>sandikaalwa306@gmail.com</span>
+      </div>
+
+      <h1 class="name">
+        <span class="first">Sandika</span>
+        <span class="last">Alwa</span>
+      </h1>
+
+      <p class="job-title">Frontend Developer</p>
     </header>
 
-    <hr>
+    <hr class="line">
 
-    <main>
-        <article>
-            <h2>Judul Artikel Pertama: Mengenal HTML</h2>
-            <p>Dipublikasikan pada: <time datetime="2026-10-11">11 Oktober 2026</time></p>
-            <p>HTML adalah bahasa markup standar untuk membuat halaman web. Dengan HTML, kita bisa menyusun teks, gambar, dan tautan.</p>
-            <a href="#">Baca selengkapnya...</a>
-        </article>
+    <!-- ===== PROFILE SUMMARY ===== -->
+    <section class="section">
+      <h2 class="section-title center">Profile Summary</h2>
+      <p class="summary">
+        Frontend Developer dengan lebih dari 4 tahun pengalaman dalam menciptakan
+        antarmuka pengguna yang responsif dan interaktif. Spesialisasi dalam React.js
+        dan Vue.js. Bertujuan untuk menciptakan pengalaman pengguna yang memikat dan
+        fungsional.
+      </p>
+    </section>
 
-        <hr>
+    <hr class="line">
 
-        <article>
-            <h2>Judul Artikel Kedua: Belajar VS Code</h2>
-            <p>Dipublikasikan pada: <time datetime="2026-10-11">11 Oktober 2026</time></p>
-            <p>Visual Studio Code adalah text editor ringan dan populer yang sangat memudahkan para pengembang web.</p>
-            <a href="#">Baca selengkapnya...</a>
-        </article>
-    </main>
+    <!-- ===== SKILL (2 KOLOM) ===== -->
+    <section class="section two-col">
+      <div>
+        <h2 class="section-title">Professional Skill</h2>
+        <ul>
+          <li>Komunikasi Efektif: Mampu menjelaskan solusi teknis kepada tim non-teknis.</li>
+          <li>Kerja Sama Tim: Terbiasa bekerja dalam tim lintas fungsi.</li>
+          <li>Kemampuan Adaptasi: Cepat beradaptasi dengan teknologi baru.</li>
+        </ul>
+      </div>
 
-    <hr>
+      <div>
+        <h2 class="section-title">Technical Skill</h2>
+        <ul>
+          <li>Framework: React, Vue.js</li>
+          <li>Tools: Webpack, Babel, ESLint</li>
+          <li>Desain: CSS3, SCSS, Material-UI, Vuetify</li>
+          <li>Lainnya: Git, Axios, RESTful API</li>
+        </ul>
+      </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 Blog Saya. Hak Cipta Dilindungi.</p>
-    </footer>
+    <hr class="line">
+
+    <!-- ===== WORK EXPERIENCE ===== -->
+    <section class="section">
+      <h2 class="section-title center">Work Experience</h2>
+
+      <div class="job">
+        <div class="job-head">
+          <h3 class="job-position">Frontend Developer,</h3>
+          <span class="date">Mei 2019 - Saat Ini</span>
+        </div>
+        <p class="company">PT. Medialnovatif, Bandung</p>
+        <ul class="tight">
+          <li>Mengembangkan dan memelihara situs web perusahaan menggunakan React.</li>
+          <li>Mengkolaborasikan dengan tim UX untuk memastikan kualitas antarmuka pengguna.</li>
+          <li>Mengintegrasikan API dari backend team untuk fungsionalitas dinamis situs.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <h3 class="job-position">Junior Frontend Developer</h3>
+          <span class="date">Mar 2017 - Apr 2019</span>
+        </div>
+        <p class="company">PT. EduSolutions, Jakarta</p>
+        <ul class="tight">
+          <li>Membantu dalam pengembangan platform belajar dengan Vue.js.</li>
+          <li>Mengoptimalisasi kinerja situs, mengurangi waktu load halaman sebesar 15%.</li>
+          <li>Membuat dokumentasi teknis untuk komponen yang dikembangkan.</li>
+        </ul>
+      </div>
+    </section>
+
+    <hr class="line">
+
+    <!-- ===== EDUCATION & PORTFOLIO (2 KOLOM) ===== -->
+    <section class="section two-col bottom">
+      <div>
+        <h2 class="section-title">Education</h2>
+
+        <div class="edu">
+          <h3 class="sub-title">Sarjana Sistem Informasi</h3>
+          <p class="company">Universitas Gunadarma, 2024 - sekarang</p>
+          <p class="desc">Fokus pada pengembangan web dan mobile apps.</p>
+        </div>
+
+        <div class="edu">
+          <h3 class="sub-title">Bootcamp Frontend Web Development</h3>
+          <p class="company">Dibimbing, Januari - Mei 2023</p>
+          <p class="desc">Fokus pada pengembangan web dan mobile apps.</p>
+        </div>
+      </div>
+
+      <div class="portfolio">
+        <h2 class="section-title">Portfolio</h2>
+
+        <h3 class="sub-title">Aplikasi Pengelola Keuangan FinansialKu</h3>
+        <ul>
+          <li>URL: <a href="https://www.finansialku-app.com">www.finansialku-app.com</a></li>
+          <li>Tanggung Jawab: Membuat backend menggunakan Node.js dan frontend dengan Vue.js.</li>
+          <li>Fitur Utama: Otomatisasi pengeluaran, grafik laporan bulanan, dan notifikasi pengingat.</li>
+          <li>Hasil: Diunduh lebih dari 10.000 kali dalam 2 bulan pertama dan mendapat rating 4.7 di Play Store.</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
 </body>
 </html>
